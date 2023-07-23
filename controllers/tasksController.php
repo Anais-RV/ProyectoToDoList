@@ -16,6 +16,14 @@ public function guardar($Title, $Description, $Created_at, $Finished_at, $Comple
     public function show($id){
         return ($this->model->show($id) != false) ? $this->model->show($id) : header("Location:index.php");
     }
+
+    public function index(){
+        return ($this->model->index()) ? $this->model->index() : false;
+    }
+
+    public function update($id, $Title, $Description, $Created_at, $Finished_at, $Completed){
+        return ($this->model->update($id,$Title, $Description, $Created_at, $Finished_at, $Completed) != false) ? header("Location:show.php?id=".$id) : header("Location:index.php");
+        }
 }
     
 ?>
