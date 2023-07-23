@@ -53,7 +53,7 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
-                                        <a href="./view/task/delete.php?id=<?= $row["id"]?>" class="btn btn-danger">Eliminar</a>  
+                                        <a href="./delete.php?id=<?= $row["id"]?>" class="btn btn-danger">Eliminar</a>  
                                     </div>
                                 </div>
                             </div>
