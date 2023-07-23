@@ -1,0 +1,15 @@
+{
+    "name": "anais/proyectotodolist",
+    "autoload": {
+        "psr-4": {
+            "Anais\\Proyectotodolist\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Anais-RV",
+            "email": "anaisrv@gmail.com"
+        }
+    ],
+    "require": {}
+}
