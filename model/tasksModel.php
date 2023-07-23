@@ -20,9 +20,9 @@ class TaskModel{
     }
 
 
-    public function show($Id){
-        $stament = $this->PDO->prepare("SELECT * FROM tasks where Id = :Id limit 1");
-        $stament->bindParam(":Id",$Id);
+    public function show($id){
+        $stament = $this->PDO->prepare("SELECT * FROM tasks where id = :id limit 1");
+        $stament->bindParam(":id",$id);
         return ($stament->execute()) ? $stament->fetch() : false;
     }
 

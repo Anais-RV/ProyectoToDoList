@@ -3,7 +3,7 @@ require_once("../../view/head/head.php");
 require_once("./../../controllers/tasksController.php");
 
 $obj = new TaskController();
-$date = $obj->show($_GET['Id']);
+$date = $obj->show($_GET['id']);
 print_r($date)
 ?>
 
@@ -15,7 +15,7 @@ print_r($date)
     </thead>
     <tbody>
         <tr>
-            <td scope="col"><?= $date["Id"] ?></td>
+            <td scope="col"><?= $date["id"] ?></td>
         </tr>
     </tbody>
 </table>
