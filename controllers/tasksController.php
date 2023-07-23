@@ -8,13 +8,13 @@ class TaskController{
         $this->model = new TaskModel();
     }
 
-    public function guardar($Title, $Description, $Created_at, $Finished_at, $Completed){
-        $id = $this->model->insertar($Title, $Description, $Created_at, $Finished_at, $Completed);
-        return ($id!=false) ? header("Location: show.php?id=".$id) : header("Location:create.php");
+public function guardar($Title, $Description, $Created_at, $Finished_at, $Completed){
+    $id = $this->model->insertar($Title, $Description, $Created_at, $Finished_at, $Completed);
+    return ($Id!=false) ? header("Location: show.php?Id=".$Id) : header("Location:create.php");
     }
 
-    public function show($Id){
-return ($this->model->show($Id) != false) ? $this->model->show($Id) : header("Location:index.php");
+public function show($Id){
+    return ($this->model->show($Id) != false) ? $this->model->show($Id) : header("Location:index.php");
 }
     }
 ?>
