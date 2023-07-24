@@ -39,9 +39,8 @@
                         <a href="./show.php?id=<?= $row["id"]?>" class="btn btn-primary">Ver</a>
                         <a href="./edit.php?id=<?= $row["id"]?>" class="btn btn-success">Editar</a>
                         
-                        <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Eliminar</a>
-                        
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal<?= $row["id"] ?>">Eliminar</a>
+                        <div class="modal fade" id="exampleModal<?= $row["id"] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">

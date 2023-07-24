@@ -23,8 +23,8 @@
                         Tareas
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./view/task/index.php">Tareas</a></li>
-                            <li><a class="dropdown-item" href="./view/task/create.php">Agregar nueva tarea</a></li>
+                            <li><a class="dropdown-item" href="../task/index.php">Tareas</a></li>
+                            <li><a class="dropdown-item" href="../task/create.php">Agregar nueva tarea</a></li>
                         </ul>
                     </li>
                 </ul>
